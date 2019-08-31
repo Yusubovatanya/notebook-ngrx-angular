@@ -1,0 +1,5 @@
+<app-todo-form></app-todo-form>
+
+<mat-card class="list_wrapper">
+  <app-todo-item *ngFor="let todo of todosState$ | async" [todo]="todo"></app-todo-item>
+</mat-card>

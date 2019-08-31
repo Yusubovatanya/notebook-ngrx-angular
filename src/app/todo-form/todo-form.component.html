@@ -1,0 +1,8 @@
+<div class="example-container form_add">
+  <mat-form-field>
+    <input matInput placeholder="Add to-do" [(ngModel)]="value" (keydown.enter)="onAddTodo()">
+    <button *ngIf="value" mat-icon-button matSuffix (click)="onAddTodo()">
+      <mat-icon class="a-icon">add_circle</mat-icon>
+    </button>
+  </mat-form-field>
+</div>

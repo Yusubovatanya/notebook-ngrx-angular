@@ -1,0 +1,19 @@
+.toolbar-row__done {
+  background: #dddddd;
+}
+
+.done {
+  text-decoration: line-through;
+}
+.action-box {
+  color: #757575;
+}
+
+.toolbar-row_todo {
+  display: flex;
+  justify-content: space-between
+}
+
+.icon_color {
+  color: #FFC107;
+}

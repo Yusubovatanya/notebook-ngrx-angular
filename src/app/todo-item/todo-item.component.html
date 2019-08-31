@@ -1,0 +1,17 @@
+  <mat-toolbar-row class="toolbar-row toolbar-row__done toolbar-row_todo"
+    [ngClass]="{'toolbar-row__done': todo.status}">
+    <div>
+      <button mat-icon-button (click)="markStar()">
+        <mat-icon class="a-icon" class="icon_color">{{todo.starStatus? 'star' : 'star_border'}}</mat-icon>
+      </button>
+      <button mat-icon-button (click)="mark()" class="btn_action action-box">
+        <mat-icon class="a-icon">{{todo.status? 'check_box' : 'check_box_outline_blank'}}</mat-icon>
+      </button>
+      <span [ngClass]="{'done': todo.status}">{{todo.text}}</span>
+    </div>
+
+    <button mat-icon-button (click)="deleteTodo()" class="btn_action action-box">
+      <mat-icon class="a-icon">delete</mat-icon>
+    </button>
+
+  </mat-toolbar-row>
